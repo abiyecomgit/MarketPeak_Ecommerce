@@ -30,4 +30,84 @@ Download a Website Template: Visit (Tooplate)[https://www.tooplate.com/] or any 
 
 ![Template-download](image/Template-download.png)
 
-#1.3 Stage and Commit the Template to Git
+
+# 1.3 Stage and Commit the Template to Git
+
+Below commands was used to carryout the staging and commiting the Template to git:
+
+`git add .`
+
+`git commit -m "Initial commit with basic e-commerce site structure"`
+
+![Template-added](image/Template-added-committed.png)
+
+![Template-coppied](image/Template-coppied.png)
+
+
+# 1.4 I Pushed the code to my Github repository
+
+All git activities done far were done for the repository to be trace by git on our local workstation.
+
+What happen if our system is currupted by virus or our workstation totally breakdown, that means we will lost all of our files and start all over again. That is never the best practice. To avoid this we will carry out the following steps:
+
+4.1 Create a Remote Repository on GitHub: Log into your GitHub account and create a new repository named "MarketPeak_Ecommerce" Leave the repository empty without initializing it with a README, .gitignore, or license.
+
+![Repo-created](image/Repo-created.png)
+
+![Repo-without-initializing](image/Repo-without-initializing.png)
+
+
+# 1.5 Link Your Local Repository to GitHub: In your terminal, within your project directory, add the remote repository URL to your local repository configuration.
+
+ git remote add origin https://github.com/abiyecomgit/MarketPeak_Ecommerce.git
+
+# 1.6 Push your code to GitHub repository: Push using the following command:
+
+git push -u orogin main
+
+![Pushed-main](image/Pushed-main.png)
+
+
+
+## 2: AWS Deployment
+
+**2.1: Setup an AWS EC2 instance for deployment**
+
+**. Log in to the AWS Management Console.**
+**. Launch an EC2 instance using an Amazon Linux AMI.**
+**. Connect to the instance using SSH.**
+**. Note that I used my existing security group that has both port 22 and port 80 opened. I also used existing keypair**
+
+![EC2-created](image/EC2-created.png)
+
+
+## 2.2 Clone the repository on the Linux Server
+
+**Before deploying your e-commerce platform, you need to clone the GitHub repository to your AWS EC2 instance. This process involves authenticating with GitHub and choosing between two primary methods of cloning a repository: SSH and HTTPS. To see the ssh or http link to clone your repository: SSH and HTTPS.**
+
+## 2.3 Authenticating with GitHub using ssh
+
+# On your EC2 instance, generate SSH keypair using ssh-keygen as shown:
+
+`ssh-keygen`
+
+![Generated-key](image/Generated-key.png)
+
+
+# 2.4 cat and copy the public key.
+
+`cat /home/ubuntu/.ssh/id_ed25519.pub`
+
+
+![Public-key](image/Public-key.png)
+
+
+## 2.5 Adding ssh public key to GitHub repository:
+
+**Firstly, click on your image icon, click on settings, then click on ssh and the Gkeys**
+
+![sshkey-authenticated](image/sshkey-authenticated.png)
+
+
+
+
