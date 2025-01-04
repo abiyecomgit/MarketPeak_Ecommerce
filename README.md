@@ -63,7 +63,7 @@ What happen if our system is currupted by virus or our workstation totally break
 
 # 1.6 Push your code to GitHub repository: Push using the following command:
 
-git push -u orogin main
+git push -u origin main
 
 ![Pushed-main](image/Pushed-main.png)
 
@@ -110,4 +110,37 @@ git push -u orogin main
 
 
 
+3. ## Continuous Integration and Deployment Workflow
 
+To ensure a smooth workflow for developing, testing, and deploying your e-commerce platform, follow this structured approach. It covers making changes in a development environment, utilizing version control with Git, and deploying updates to your production server on AWS.
+
+### Step 1: Developing New Features and Fixes
+
+Create a Development Branch: Begin your development work by creating a separate branch. This isolates new features and bug fixes from the stable version of your website.
+
+Below commands were used:
+
+`git branch development`
+`git checkout development`
+
+In implementing, I changed the landing page images in image folder. 
+
+### Step 2:
+
+I staged the images, commit and pushed:
+
+```markdown
+git add .
+
+git commit -m  "images edited"
+
+git push origin development
+```
+
+
+### Step 3 Pull Request abd nerging to the Main branch:
+
+When I pushed to the development branch. I pull request was automatically initiated and I created a merged requested and confirmed/merged to the main branch.
+
+
+![Merging-PR](image/merging-PR.png)
