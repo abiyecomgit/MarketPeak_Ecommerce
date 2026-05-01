@@ -5,7 +5,7 @@
 
 # Project Instructions:
 
-I'v been assigned to develope an e-commerce website for a new online marketplace named "MarketPeak." This platform will feature product listings, a shopping cart, and user authentication. To implement this project I will be using Git for version control, the develpoment platform will be in a Linux environment, and deploy it on an AWS EC2 instance. You can find a suitable website template here to kickstart your development
+I'v been assigned to develope an e-commerce website for a new online marketplace named "MarketPeak." This platform will feature product listings, a shopping cart, and user authentication. To implement this project I will be using Git for version control, the develpoment platform will be in a Linux environment, and deploy it on an AWS EC2 instance. I used a suitable website template to kickstart the development
 
 # Tasks
 
